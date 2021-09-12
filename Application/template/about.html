@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+<!-- Basic Page Needs
+  ================================================== -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Aboutus dSummarizer</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+
+<!-- Mobile Specific Metas
+  ================================================== -->
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<!-- CSS
+  ================================================== -->
+<link href="{{ url_for('static', filename='css2/bootstrap.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='css2/bootstrap-theme.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='css2/style.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='vendor/prettyphoto/css/prettyPhoto.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='vendor/owl-carousel/css/owl.carousel.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='vendor/owl-carousel/css/owl.theme.css') }}" rel="stylesheet" type="text/css">
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css2/ie.css') }}" media="screen" /><![endif]-->
+<link href="{{ url_for('static', filename='css2/custom.css') }}" rel="stylesheet" type="text/css"><!-- CUSTOM STYLESHEET FOR STYLING -->
+<!-- Color Style -->
+<link href="colors/color1.css" rel="stylesheet" type="text/css">
+<!-- SCRIPTS
+  ================================================== -->
+<script src="js/modernizr.js"></script><!-- Modernizr -->
+</head>
+<body class="header-style1">
+<div class="body">
+	<div class="topbar">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-6  col-sm-6">
+                	<p>For Further info visit dSummarizer facebook, instagram and twitter pages</p>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                	<ul class="pull-right social-icons-colored">
+                    	<li class="facebook"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                    	<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    	<li class="instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- Start Site Header -->
+    <div class="site-header-wrapper">
+
+
+
+
+        <header class="site-header">
+            <div class="container sp-cont">
+                <div class="site-logo">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+                </div>
+                <a href="#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
+                <!-- Main Navigation -->
+                <nav class="main-navigation dd-menu toggle-menu" role="navigation">
+                    <ul class="sf-menu">
+                        <li><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="{{ url_for('signup') }}">Developer's&nbspOption</a></li>
+                        <li class="active"><a href="#">About&nbspUs</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- End Site Header -->
+   	</div>
+    <div class="hero-area">
+    	<div class="page-header parallax" style="background-image:url({{ url_for('static', filename='images/about.jpeg') }})"><div><div><span>About Us</span></div></div></div>
+    </div>
+    <!-- Notive Bar -->
+    <div class="notice-bar">
+      	<div class="container">
+        	<ol class="breadcrumb">
+            	<li><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="{{ url_for('signup') }}">Developer's&nbspOption</a></li>
+                        <li class="active"><a href="#">About&nbspUs</a></li>
+            </ol>
+        </div>
+    </div>
+    <!-- Start Body Content -->
+  	<div class="main" role="main">
+    	<div id="content" class="content full">
+            <div class="container">
+            	<div class="row">
+                	<div class="col-md-7 col-sm-6">
+            			<h4 class="short accent-color">Our history</h4>
+                        <h1>About dSummarizer</h1>
+                        <p class="lead"></p>
+                        <img src="{{ url_for('static', filename='images/back.jpeg') }}">
+                		<p>dSummarizer is a software that is made to minimize effort of movie lovers. As movie lovers have to go through a lot of reviews to find perfect movie. This is time consuming as well as tiring. dSummarizer goes through all the reviews and presents the users with a synopsis. This simple task will enable users to get the crux of the reviews on one click.</p>
+                	</div>
+                	<div class="col-md-5 col-sm-6">
+                    	<!-- Widget Special Events -->
+                        <div class="widget widget_special_events">
+                        	<h3 class="widget-title">Objectives</h3>
+                            <div class="widget_special_events_in">
+
+                            	<div class="event-item format-standard">
+                                	<a href="#" class="media-box event-featured-img"><img src="images/about2.jpeg" alt=""></a>
+                                	<div class="meta-data alt">
+                                    	<div>The principle goal of dSummarizer is to spare the time of movie lovers. Movie lovers will not need to read all reviews of movie. dSummarizer will give synopsis of all reviews of each movie.</div>
+                                        <!--<div><a href="#">Shop Pleu</a></div>-->
+                                    </div>
+                                    <h3 class="post-title">Developer's Point</h3>
+
+                                </div>
+
+                            	<div class="event-item format-standard">
+                                	<div class="meta-data alt">
+                                        <p>dSummarizer provides developer an healthy environment to get the data easily and also get the synopsis by just use our API.</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+               	</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

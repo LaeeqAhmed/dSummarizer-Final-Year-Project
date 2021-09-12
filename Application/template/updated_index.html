@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home dSummarizer</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="One Movies Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+
+<link href="{{ url_for('static', filename='css/css-bootstrap.css') }}" rel="stylesheet" type="text/css" media="all">
+<link href="{{ url_for('static', filename='css/css-style.css') }}" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css-contactstyle.css') }}" type="text/css" media="all">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css-faqstyle.css') }}" type="text/css" media="all">
+<link href="{{ url_for('static', filename='css/css-single.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='css/css-medile.css') }}" rel="stylesheet" type="text/css">
+<!-- banner-slider -->
+<link href="{{ url_for('static', filename='css/css-popuo-box.css') }}" rel="stylesheet">
+<!-- //banner-slider -->
+<!-- pop-up -->
+<link href="{{ url_for('static', filename='css/css-popuo-box.css') }}" rel="stylesheet" type="text/css" media="all">
+<!-- //pop-up -->
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css-font-awesome.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<!-- //font-awesome icons -->
+<!-- js -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/3730-js-jquery-2.1.4.min.js') }}"></script>
+<!-- //js -->
+<!-- banner-bottom-plugin -->
+<link href="{{ url_for('static', filename='css/css-owl.carousel.css') }}" rel="stylesheet" type="text/css" media="all">
+<script src="{{ url_for('static', filename='js/1287-js-owl.carousel.js') }}"></script>
+<script>
+	$(document).ready(function() {
+		$("#owl-demo").owlCarousel({
+
+		  autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+		  items : 5,
+		  itemsDesktop : [640,4],
+		  itemsDesktopSmall : [414,3]
+
+		});
+
+		$("#owl-demo1").owlCarousel({
+
+	 autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+	 items : 5,
+	 itemsDesktop : [640,4],
+	 itemsDesktopSmall : [414,3]
+
+   });
+
+	});
+</script>
+<!-- //banner-bottom-plugin -->
+<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300" rel="stylesheet" type="text/css">
+
+
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/5857-js-move-top.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/7977-js-easing.js') }}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<style>
+.w3_search{
+	background-color:rgba( 153, 153, 153, .3);
+}
+
+
+</style>
+</head>
+
+<body>
+<script src="{{ url_for('static', filename='js/monetization.js') }}" type="text/javascript"></script>
+<script>
+(function(){
+	if(typeof _bsa !== 'undefined' && _bsa) {
+  		// format, zoneKey, segment:value, options
+  		_bsa.init('flexbar', 'CKYI627U', 'placement:w3layoutscom');
+  	}
+})();
+</script>
+<script>
+(function(){
+if(typeof _bsa !== 'undefined' && _bsa) {
+	// format, zoneKey, segment:value, options
+	_bsa.init('fancybar', 'CKYDL2JN', 'placement:demo');
+}
+})();
+</script>
+<script>
+(function(){
+	if(typeof _bsa !== 'undefined' && _bsa) {
+  		// format, zoneKey, segment:value, options
+  		_bsa.init('stickybox', 'CKYI653J', 'placement:w3layoutscom');
+  	}
+})();
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149859901-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149859901-1');
+</script>
+
+<script>
+     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+     ga('create', 'UA-149859901-1', 'demo.w3layouts.com');
+     ga('require', 'eventTracker');
+     ga('require', 'outboundLinkTracker');
+     ga('require', 'urlChangeTracker');
+     ga('send', 'pageview');
+   </script>
+<script async src="{{ url_for('static', filename='js/js-autotrack.js') }}"></script>
+
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css-font-awesome.min.css') }}">
+<!-- New toolbar-->
+
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<div class="w3layouts_logo">
+				<div class="w3_search">
+					<form action="#" class="bar">
+						<input type="text" name="Search" id="search" placeholder="Search" required/>
+						<input type="submit" value="Go">
+					</form>
+					<div id="match-list">
+
+					</div>
+				</div>
+				<a href="#">
+					<img class="logo" src="{{ url_for('static', filename='images/logo.png') }}">
+				</a>
+			</div>
+
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //header -->
+
+	<script>
+		$('.toggle').click(function(){
+		  // Switches the Icon
+		  $(this).children('i').toggleClass('fa-pencil');
+		  // Switches the forms
+		  $('.form').animate({
+			height: "toggle",
+			'padding-top': 'toggle',
+			'padding-bottom': 'toggle',
+			opacity: "toggle"
+		  }, "slow");
+		});
+	</script>
+<!-- bootstrap-pop-up -->
+<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				Sign Up
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+			</div>
+			<section>
+				<div class="modal-body">
+					<div class="w3_login_module">
+						<div class="module form-module">
+						  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
+						  </div>
+						  <div class="form">
+							<h3>Sign Up For API</h3>
+							<form action="{{url_for('signup')}}" method="POST">
+							  <input type="text" name="username" placeholder="Username">
+							  <input type="text" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/>
+							  <input type="submit" value="SignUp">
+							</form>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+<!-- //bootstrap-pop-up -->
+<!-- nav -->
+	<div class="movies_nav">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav>
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="{{url_for('home')}}">Home</a></li>
+							<li><a href="#" data-toggle="modal" data-target="#myModal">Dev's&nbspOptions</a></li>
+							<li><a href="{{ url_for('about') }}">About&nbspUs</a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>
+	</div>
+<!-- //nav -->
+
+<!---728x90--->
+
+<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<h4 class="latest-text w3_latest_text">LATEST MOVIES</h4>
+		<div class="container">
+			<div class="w3_agile_banner_bottom_grid">
+				<div id="owl-demo" class="owl-carousel owl-theme">
+					<div class="item">
+						<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+							<a href="#" class="hvr-shutter-out-horizontal"><img src="{{ url_for('static', filename='images/movie1.jpg') }}" title="album-name" class="img-responsive" alt=" ">
+								<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+							</a>
+							<div class="mid-1 agileits_w3layouts_mid_1_home">
+								<div class="w3l-movie-text">
+									<h6><a href="#">Primiere Annee</a></h6>
+								</div>
+								<div class="mid-2 agile_mid_2_home">
+									<p>2018</p>
+									<div class="block-stars">
+										<p>Rating: 6.7/10</p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="item">
+						<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+							<a href="#" class="hvr-shutter-out-horizontal"><img src="{{ url_for('static', filename='images/movie2.jpg') }}" title="album-name" class="img-responsive" alt=" ">
+								<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+							</a>
+							<div class="mid-1 agileits_w3layouts_mid_1_home">
+								<div class="w3l-movie-text">
+									<h6><a href="#">Aami</a></h6>
+								</div>
+								<div class="mid-2 agile_mid_2_home">
+									<p>2018</p>
+									<div class="block-stars">
+									<p>Rating: 6.6/10</p>
+								</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="item">
+						<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+							<a href="#" class="hvr-shutter-out-horizontal"><img src="{{ url_for('static', filename='images/movie3.jpg') }}" title="album-name" class="img-responsive" alt=" ">
+								<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+							</a>
+							<div class="mid-1 agileits_w3layouts_mid_1_home">
+								<div class="w3l-movie-text">
+									<h6><a href="#">22 Chasser</a></h6>
+								</div>
+								<div class="mid-2 agile_mid_2_home">
+									<p>2018</p>
+										<div class="block-stars">
+										<p>Rating: 5.3/10</p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="item">
+						<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+							<a href="#" class="hvr-shutter-out-horizontal"><img src="{{ url_for('static', filename='images/movie4.jpg') }}" title="album-name" class="img-responsive" alt=" ">
+								<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+							</a>
+							<div class="mid-1 agileits_w3layouts_mid_1_home">
+								<div class="w3l-movie-text">
+									<h6><a href="#">BENT</a></h6>
+								</div>
+								<div class="mid-2 agile_mid_2_home">
+									<p>2018</p>
+										<div class="block-stars">
+										<p>Rating: 5.2/10</p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="item">
+						<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+							<a href="#" class="hvr-shutter-out-horizontal"><img src="{{ url_for('static', filename='images/movie5.jpg') }}" title="album-name" class="img-responsive" alt=" ">
+								<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+							</a>
+							<div class="mid-1 agileits_w3layouts_mid_1_home">
+								<div class="w3l-movie-text">
+									<h6><a href="#">The Field Guide To Evil</a></h6>
+								</div>
+								<div class="mid-2 agile_mid_2_home">
+									<p>2018</p>
+										<div class="block-stars">
+										<p>Rating: 4.9/10</p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="item">
+						<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+							<a href="#" class="hvr-shutter-out-horizontal"><img src="{{ url_for('static', filename='images/movie6.jpg') }}" title="album-name" class="img-responsive" alt=" ">
+								<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+							</a>
+							<div class="mid-1 agileits_w3layouts_mid_1_home">
+								<div class="w3l-movie-text">
+									<h6><a href="#">Night Shift</a></h6>
+								</div>
+								<div class="mid-2 agile_mid_2_home">
+									<p>2018</p>
+										<div class="block-stars">
+										<p>Rating: 3.9/10</p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="item">
+						<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+							<a href="#" class="hvr-shutter-out-horizontal"><img src="{{ url_for('static', filename='images/movie13.jpg') }}" title="album-name" class="img-responsive" alt=" ">
+								<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+							</a>
+							<div class="mid-1 agileits_w3layouts_mid_1_home">
+								<div class="w3l-movie-text">
+									<h6><a href="#">What They Had</a></h6>
+								</div>
+								<div class="mid-2 agile_mid_2_home">
+									<p>2018</p>
+									<div class="block-stars">
+										<p>Rating: 6.6/10</p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="item">
+						<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+							<a href="#" class="hvr-shutter-out-horizontal"><img src="{{ url_for('static', filename='images/movie14.jpg') }}" title="album-name" class="img-responsive" alt=" ">
+								<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+							</a>
+							<div class="mid-1 agileits_w3layouts_mid_1_home">
+								<div class="w3l-movie-text">
+									<h6><a href="#">Tattoo Girls</a></h6>
+								</div>
+								<div class="mid-2 agile_mid_2_home">
+									<p>2018</p>
+									<div class="block-stars">
+										<p>Rating: 8.2/10</p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //banner-bottom -->
+
+<!-- banner-bottom -->
+<div class="banner-bottom">
+	<h4 class="latest-text w3_latest_text">TOP RATED</h4>
+	<div class="container">
+		<div class="w3_agile_banner_bottom_grid">
+			<div id="owl-demo1" class="owl-carousel owl-theme">
+				<div class="item">
+					<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+						<a href="#" class="hvr-shutter-out-horizontal"><img src="{{ url_for('static', filename='images/movie7.jpg') }}" title="album-name" class="img-responsive" alt=" ">
+							<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+						</a>
+						<div class="mid-1 agileits_w3layouts_mid_1_home">
+							<div class="w3l-movie-text">
+								<h6><a href="#">After Everything</a></h6>
+							</div>
+							<div class="mid-2 agile_mid_2_home">
+								<p>2018</p>
+								<div class="block-stars">
+									<p>Rating: 6.3/10</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="item">
+					<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+						<a href="#" class="hvr-shutter-out-horizontal"><img src="{{ url_for('static', filename='images/movie8.jpg') }}" title="album-name" class="img-responsive" alt=" ">
+							<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+						</a>
+						<div class="mid-1 agileits_w3layouts_mid_1_home">
+							<div class="w3l-movie-text">
+								<h6><a href="#">Don't. Get. Out!</a></h6>
+							</div>
+							<div class="mid-2 agile_mid_2_home">
+								<p>2018</p>
+								<div class="block-stars">
+									<p>Rating: 5.8/10</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="item">
+					<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+						<a href="#" class="hvr-shutter-out-horizontal"><img src="{{ url_for('static', filename='images/movie9.jpg') }}" title="album-name" class="img-responsive" alt=" ">
+							<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+						</a>
+						<div class="mid-1 agileits_w3layouts_mid_1_home">
+							<div class="w3l-movie-text">
+								<h6><a href="#">Laplace's Witch</a></h6>
+							</div>
+							<div class="mid-2 agile_mid_2_home">
+								<p>2018</p>
+								<div class="block-stars">
+									<p>Rating: 5.2/10</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="item">
+					<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+						<a href="#" class="hvr-shutter-out-horizontal"><img src="{{ url_for('static', filename='images/movie10.jpg') }}" title="album-name" class="img-responsive" alt=" ">
+							<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+						</a>
+						<div class="mid-1 agileits_w3layouts_mid_1_home">
+							<div class="w3l-movie-text">
+								<h6><a href="#">Eleven</a></h6>
+							</div>
+							<div class="mid-2 agile_mid_2_home">
+								<p>2018</p>
+								<div class="block-stars">
+									<p>Rating: 5.3/10</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="item">
+					<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+						<a href="#" class="hvr-shutter-out-horizontal"><img src="{{ url_for('static', filename='images/movie11.jpg') }}" title="album-name" class="img-responsive" alt=" ">
+							<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+						</a>
+						<div class="mid-1 agileits_w3layouts_mid_1_home">
+							<div class="w3l-movie-text">
+								<h6><a href="#">Extremity</a></h6>
+							</div>
+							<div class="mid-2 agile_mid_2_home">
+								<p>2018</p>
+								<div class="block-stars">
+									<p>Rating: 4.2/10</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="item">
+					<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+						<a href="#" class="hvr-shutter-out-horizontal"><img src="{{ url_for('static', filename='images/movie12.jpg') }}" title="album-name" class="img-responsive" alt=" ">
+							<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+						</a>
+						<div class="mid-1 agileits_w3layouts_mid_1_home">
+							<div class="w3l-movie-text">
+								<h6><a href="#">The Spy Who Dumped Me</a></h6>
+							</div>
+							<div class="mid-2 agile_mid_2_home">
+								<p>2018</p>
+								<div class="block-stars">
+									<p>Rating: 6.1/10</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="item">
+					<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+						<a href="#" class="hvr-shutter-out-horizontal"><img src="{{ url_for('static', filename='images/movie5.jpg') }}" title="album-name" class="img-responsive" alt=" ">
+							<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+						</a>
+						<div class="mid-1 agileits_w3layouts_mid_1_home">
+							<div class="w3l-movie-text">
+								<h6><a href="#">The Field Guide To Evil</a></h6>
+							</div>
+							<div class="mid-2 agile_mid_2_home">
+								<p>2018</p>
+								<div class="block-stars">
+									<p>Rating: 4.9/10</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="item">
+					<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
+						<a href="#" class="hvr-shutter-out-horizontal"><img src="{{ url_for('static', filename='images/movie6.jpg') }}" title="album-name" class="img-responsive" alt=" ">
+							<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+						</a>
+						<div class="mid-1 agileits_w3layouts_mid_1_home">
+							<div class="w3l-movie-text">
+								<h6><a href="#">Night Shift</a></h6>
+							</div>
+							<div class="mid-2 agile_mid_2_home">
+								<p>2018</p>
+								<div class="block-stars">
+										<p>Rating: 3.9/10</p>
+									</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //banner-bottom -->
+<!---728x90--->
+
+
+	<!-- pop-up-box -->
+		<script src="{{ url_for('static', filename='js/5674-js-jquery.magnific-popup.js') }}" type="text/javascript"></script>
+
+	<script>
+		$(document).ready(function() {
+		$('.w3_play_icon,.w3_play_icon1,.w3_play_icon2').magnificPopup({
+			type: 'inline',
+			fixedContentPos: false,
+			fixedBgPos: true,
+			overflowY: 'auto',
+			closeBtnInside: true,
+			preloader: false,
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-zoom-in'
+		});
+
+		});
+	</script>
+
+<script src="{{ url_for('static', filename='js/160-js-bootstrap.min.js') }}"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');
+        }
+    );
+});
+</script>
+<!-- //Bootstrap Core JavaScript -->
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
